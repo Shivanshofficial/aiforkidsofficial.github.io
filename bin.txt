@@ -1,0 +1,21 @@
+ aiforkids
+ |
+_____________________________________________________________________________
+
+ list ---   localhost:1313/class-10/
+
+ single --- directory specific page
+        --- pure single page / non index page
+        --- index page or home page of directory 
+
+________________________________________________________________________________
+
+LAYOUTS
+
+--> _default => 
+
+PARTIALS => 
+
+
+
+

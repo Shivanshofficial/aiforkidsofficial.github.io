@@ -1,0 +1,30 @@
+{{ define "headlinks" }}
+
+<link rel="stylesheet" type="text/css" href="/css/utils/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arima+Madurai:wght@500|Roboto:400,400italic,500,500italic,700,700italic|Material+Icons&family=Noto+Sans+KR&display=swap//fonts.googleapis.com/css?family=Arima+Madurai:wght@500|Roboto:400,400italic,500,500italic,700,700italic|Material+Icons&display=swap">
+<link rel="stylesheet" href="/css/custom/styles.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/custom/home.min.css" />
+<script src="/js/utils/anchor.min.js"></script>
+
+{{ end }}
+{{ define "main" }}
+  
+  {{if isset .Params "underdev"}}
+  {{if eq .Params.underdev "yes"}}
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Important: </strong> We are Working hard on this page, Page Under Development!!
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {{end}}
+  {{end}}
+{{ .Content }}
+{{end}}
+
+
+{{ define "footerlinks" }}
+<script defer src="/js/custom/script.js"></script>
+{{end}}

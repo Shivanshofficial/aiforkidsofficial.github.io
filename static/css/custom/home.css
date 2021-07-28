@@ -1,0 +1,185 @@
+
+/* 
+* =========================================================
+* 						HOME CSS
+* =========================================================
+*/
+
+
+  
+.v-middle {
+  position: absolute;
+  width: 100%;
+  top: 75%;
+  left: 0;
+  -webkit-transform: translate(0,-50%);
+  -moz-transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
+  -o-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+}
+
+
+
+.welcomeTop h1{
+  color: var( --color-accent );
+  font-family: "Arial", Sans-serif;
+  font-size: 4em;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -0.8px;
+  padding-top: 38vh;
+  text-align: center;
+}
+.welcomeTop h1 a:hover{
+text-decoration: underline;
+color: var(--color-secondary);
+}
+.welcomeTop h1 a{
+  /* color: var( --e-global-color-accent ); */
+  font-family: "Arial", Sans-serif;
+  font-size:2rem;
+  font-weight: 400;
+  /* line-height: 72px; */
+  
+  letter-spacing: -0.8px;
+  text-align: center;
+}
+.welcomeTop {
+  margin: 0px 0px 0px 0px;
+  margin-top: -4vh;
+  /* padding: 11rem; */
+  background-image: url(/images/aiforkids_homepage.png);
+  box-sizing: border-box;
+  height: calc(100vh - 64px);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 89vw 85vh;
+} 
+
+.visionBtn {
+border: 2px solid #5454545E;
+border-radius:5px;
+fill: #6BA8F8;
+color: #6BA8F8;
+background-color: #FFFFFF;
+padding: 12px 12px 10px 12px;
+text-align:center;
+font-weight: 500;
+transition: .3s ease all;
+letter-spacing: -.7px;
+
+}
+.visionBtn:hover{
+color: #6BA8F8;
+background-color: #FFFFFF;
+color: #FFFFFF;
+background-color: #1A73E8;
+border-color: #FFFFFF;
+}
+ /* Responsiveness */
+  
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+
+/* .welcomeTop{
+ padding: 3rem 0;
+} */
+
+.welcomeTop h1 a{
+  font-size: 1rem;
+  font-weight: 400;
+  
+}
+body .welcomeTop h1{
+
+  font-size: 3em ;
+  letter-spacing: -0.8px;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+.welcomeTop h1 {
+  max-width: 100%;
+}
+.welcomeTop h1 a{
+  position: absolute; top: -9999px; left: -9999px;
+}
+
+.welcomeTop {
+  background-image: url(/images/aiforkids_homepage-800x900.png);
+}
+
+}
+
+@media screen and (max-width: 650px) {
+  body .welcomeTop h1 {
+    font-size: 2.5em ;
+  }
+}
+@media screen and (max-width: 573px) {
+  body .welcomeTop h1 {
+    font-size: 2.5em ;
+    max-width: 100%;
+    padding-top: 30vh;
+    line-height: 60px;
+  }
+  .welcomeTop{
+    background-image: url(/images/aiforkids_homepage-595x842.png);
+    
+  }
+  .welcomeTop h1 a{
+    position: relative; 
+    top: 0; 
+    left: 0;
+    font-size: 1.3rem;
+    
+  }
+  
+}
+
+
+@media screen and (max-width: 476px) {
+  body .welcomeTop h1 {
+    font-size: 2.2em ;
+    line-height: 55px;
+    max-width: 100%;
+  }
+
+}
+@media screen and (max-width: 376px) {
+  body .welcomeTop h1 {
+    font-size: 2.2em ;
+    line-height: 55px;
+    max-width: 100%;
+    padding-top: 30vh;
+    font-family: var(--ff-heading);
+    
+  }
+  .visionBtn{
+    padding: 8px 4px;
+    font-size: 13px;
+    font-family: var(--ff-heading);
+    font-weight: bold;
+  }
+  .welcomeTop h1 a{
+    position: relative; 
+    top: 0; 
+    left: 0;
+    font-size: 1.3rem;
+    font-family: var(--ff-heading);
+    
+  }
+  .welcomeTop{
+    background-image: url(/images/aiforkids_homepage-mobile.png);
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+.welcomeTop h1{
+  font-size: 3.5em;
+}
+}

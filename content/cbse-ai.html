@@ -1,0 +1,747 @@
+---
+underdev: "yes"
+title: "Artificial Intelligence for CBSE Students"
+date: 2021-06-19T18:56:37+05:30
+draft: false
+keywords: "Artificial Intelligence"
+description: Artificial Intelligence for CBSE students including Cbse AI syllabus, AI projects, Ai worksheets and Quizzes on Artificial Intelligence for CBSE students
+breadtitle: AI for CBSE
+nofeatureimage: yes
+---
+<style>
+  /*
+    *
+    * ==========================================
+    * CUSTOM UTIL CLASSES
+    * ==========================================
+    */
+
+
+/* //////////////////////// */
+.classlistcontainer{
+  padding-top: 7px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+ul.classlist{
+  display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    column-count: 2;
+    column-gap: 13px;
+}
+
+.classlistitem{
+  -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    padding-bottom: 30px;
+    text-align: center;
+    width: calc(33.33333% - 16.66667px);
+    -ms-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    list-style: none;
+}
+.gradebox{
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0;
+  position: relative;
+  text-align: left;
+
+
+}
+.gradebox-link h2{
+  margin: 0;
+}
+.gradebox-link{
+  cursor: pointer;
+  display: block;
+  padding: 4px 7px 4px 10;
+  position: relative;
+  text-decoration: none;
+  color: #00659e;
+  padding-top: 13px;
+  
+}
+.grade-box-tab {
+    background-color: grey;
+    border-radius: 0 19px 19px 0;
+    color: #fff;
+    display: inline-block;
+    height: 38px;
+    font: bold 18px/38px var(--ff-heading);
+    left: -4px;
+    margin-right: 2px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 33px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    padding-right: 15px;
+    text-align: right;
+    width: 43px;
+}
+.grade-box-hdr {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.blue1-fill-svg {
+    fill: #10a0b6;
+}
+@media screen and (min-width: 801px)
+{
+.grades-list-arrow {
+    display: none;
+}
+}
+@media screen and (min-width: 481px){
+.grades-list-arrow {
+    height: 17px;
+    right: 10px;
+    width: 9px;
+}
+}
+.grades-list-arrow {
+    height: 17px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    width: 9px;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.grade-box-name {
+    font-size: 18px;
+    white-space: nowrap;
+    position: static;
+    left: auto;
+    font: var(--font-h3);
+}
+.blue1-text, .blue1-text:hover {
+    color: #10a0b6;
+}
+
+.gradebox-body ul
+{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.gradebox-body{
+  display: block;
+  padding: 5px 20px 15px 20px;
+  /* border-top:  1px dotted #48465e; */
+}
+.gradebox-body-links{
+  padding-top: 15px;
+}
+.gradebox-body-description
+{
+  padding-top: 10px;
+  margin: 0;
+  display: block;
+
+  border-bottom: 1px solid #e1e1e1;
+    color: var(--color-accent);
+    font: normal 14px/1.5em Verdana,sans-serif;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.subject-link-item
+{
+  list-style: none;
+  padding-bottom: 6px;
+}
+.subject-skill-container
+{ 
+  display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-wrap: none;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.subject-hdr {
+    color: var(--color-accent);
+    font: normal 14px/1.1em Verdana,sans-serif;
+    margin-left: 0;
+    display: block;
+    text-align: left;
+}
+
+
+/* //////////////////////// */
+
+  .nav-pills-custom .nav-link {
+    color: #aaa;
+    background: #fff;
+    position: relative;
+  }
+
+  .dark-theme .nav-pills-custom .nav-link {
+    color: rgb(212, 211, 211);
+    background: rgb(66, 66, 66);
+    position: relative;
+  }
+
+
+  .nav-pills-custom .nav-link.active {
+    color: var(--color-text);
+    background: #fff;
+    border: 3px solid #7A7A7A;
+  }
+
+  .dark-theme .nav-pills-custom .nav-link.active {
+    background-color: rgb(92, 91, 91);
+  }
+
+  .nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+  }
+
+  .tab-pane a:hover {
+    text-decoration: underline;
+  }
+
+  .tab-pane {
+    border: 3px solid var(--color-text);
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #e3e3e3,
+      -20px -20px 60px #ffffff;
+  }
+
+  .dark-theme .tab-pane p,
+  .dark-theme .tab-pane h4 {
+    color: rgb(231, 227, 219) !important;
+  }
+
+  .dark-theme .tab-pane {
+    background: rgb(66, 66, 66) !important;
+  }
+
+
+
+  /* Responsiveness */
+
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+
+    /* Indicator for active tab */
+    .nav-pills-custom .nav-link::before {
+      content: '';
+      display: block;
+      border-top: 8px solid transparent;
+      border-left: 10px solid var(--color-text);
+      ;
+      border-bottom: 8px solid transparent;
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      color: var(--color-text);
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+  }
+</style>
+<br>
+
+<div class="lineBr"></div>
+<br>
+<p class="post_text_content ">
+  CBSE started introducing artificial intelligence from class 6 onwards as a 6th subject for all the Cbse Schools in
+  2019 and the partnership with Intel for the Different resources and training programs for teachers. <br> <br>
+  This initiative for introducing AI in CBSE schools is creating a great opportunity for students to interact with the
+  technologies.
+</p>
+<br>
+<div class="lineBr"></div>
+<br>
+
+<!-- <div class="classlistcontainer">
+  <ul class="classlist">
+    <li class="classlistitem">
+      <div class="gradebox border-primary">
+        <a href="" class="gradebox-link">
+            <div class="grade-box-tab bg-primary">
+              X
+            </div>
+            <h2 class="grade-box-hdr blue1-text">
+              <span class="grade-box-name">Class 10</span>
+              
+                
+              
+      <svg class="grades-list-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_-ge-PK" x="0px" y="0px" viewBox="0 0 9 17" style="enable-background:new 0 0 9 17;" xml:space="preserve">
+      <polygon class="blue1-fill-svg" points="8.7,8.5 8.7,8.5 8.7,8.5 2.3,0.4 0,2.4 4.8,8.5 0,14.6 2.3,16.6 8.7,8.5 8.7,8.5 "></polygon>
+      </svg>
+      
+            </h2>
+        </a>
+        <div class="gradebox-body">
+          <div class="gradebox-body-description">
+            Artificial Intelligence curriculum for Class 10 by CBSE 
+          </div>
+          <ul class="gradebox-body-links">
+            <li class="subject-link-item">
+              <div class="subject-skill-container">
+                <h3 class="subject-hdr">Maths</h3>
+                <a class="skill-lk" href="/maths/lkg">
+                  <span class="lk-txt">55 skills >></span>
+                </a>
+              </div>
+            </li>
+            <li class="subject-link-item">
+              <div class="subject-skill-container">
+                <h3 class="subject-hdr">Maths</h3>
+                <a class="skill-lk" href="/maths/lkg" data-ga-click-event-name="grade list"
+                  data-ga-click-event-detail="/math/lkg"><span class="lk-txt">55 skills >></span></a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+  </li>
+
+  
+  
+    <li class="classlistitem">
+      <div class="gradebox border-danger">
+        <a href="" class="gradebox-link">
+            <div class="grade-box-tab bg-danger">
+              IX
+            </div>
+            <h2 class="grade-box-hdr blue1-text">
+              <span class="grade-box-name text-danger">Class 9</span>
+              
+                
+              
+      <svg class="grades-list-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_-ge-PK" x="0px" y="0px" viewBox="0 0 9 17" style="enable-background:new 0 0 9 17;" xml:space="preserve">
+      <polygon class="blue1-fill-svg" points="8.7,8.5 8.7,8.5 8.7,8.5 2.3,0.4 0,2.4 4.8,8.5 0,14.6 2.3,16.6 8.7,8.5 8.7,8.5 "></polygon>
+      </svg>
+      
+            </h2>
+        </a>
+        <div class="gradebox-body">
+          <div class="gradebox-body-description">
+            Artificial Intelligence curriculum for Class 9 by CBSE 
+          </div>
+          <ul class="gradebox-body-links">
+            <li class="subject-link-item">
+              <div class="subject-skill-container">
+                <h3 class="subject-hdr">Maths</h3>
+                <a class="skill-lk" href="/maths/lkg">
+                  <span class="lk-txt">55 skills >></span>
+                </a>
+              </div>
+            </li>
+            <li class="subject-link-item">
+              <div class="subject-skill-container">
+                <h3 class="subject-hdr">Maths</h3>
+                <a class="skill-lk" href="/maths/lkg" data-ga-click-event-name="grade list"
+                  data-ga-click-event-detail="/math/lkg"><span class="lk-txt">55 skills >></span></a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+  </li>
+
+  
+    <li class="classlistitem">
+      <div class="gradebox border-warning">
+        <a href="" class="gradebox-link">
+            <div class="grade-box-tab bg-warning">
+              VIII
+            </div>
+            <h2 class="grade-box-hdr blue1-text">
+              <span class="grade-box-name text-warning">Class 8</span>
+
+                
+              
+      <svg class="grades-list-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_-ge-PK" x="0px" y="0px" viewBox="0 0 9 17" style="enable-background:new 0 0 9 17;" xml:space="preserve">
+      <polygon class="blue1-fill-svg" points="8.7,8.5 8.7,8.5 8.7,8.5 2.3,0.4 0,2.4 4.8,8.5 0,14.6 2.3,16.6 8.7,8.5 8.7,8.5 "></polygon>
+      </svg>
+      
+            </h2>
+        </a>
+        <div class="gradebox-body">
+          <div class="gradebox-body-description">
+            Artificial Intelligence curriculum for Class 6 by CBSE 
+          </div>
+          <ul class="gradebox-body-links">
+            <li class="subject-link-item">
+              <div class="subject-skill-container">
+                <h3 class="subject-hdr">Maths</h3>
+                <a class="skill-lk" href="/maths/lkg">
+                  <span class="lk-txt">55 skills >></span>
+                </a>
+              </div>
+            </li>
+            <li class="subject-link-item">
+              <div class="subject-skill-container">
+                <h3 class="subject-hdr">Maths</h3>
+                <a class="skill-lk" href="/maths/lkg" data-ga-click-event-name="grade list"
+                  data-ga-click-event-detail="/math/lkg"><span class="lk-txt">55 skills >></span></a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+  </li>
+
+  
+    <li class="classlistitem">
+      <div class="gradebox border-info">
+        <a href="" class="gradebox-link">
+            <div class="grade-box-tab  bg-info">
+              VII
+            </div>
+            <h2 class="grade-box-hdr blue1-text">
+              <span class="grade-box-name text-info">Class 7</span>
+              
+                
+              
+      <svg class="grades-list-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_-ge-PK" x="0px" y="0px" viewBox="0 0 9 17" style="enable-background:new 0 0 9 17;" xml:space="preserve">
+      <polygon class="blue1-fill-svg" points="8.7,8.5 8.7,8.5 8.7,8.5 2.3,0.4 0,2.4 4.8,8.5 0,14.6 2.3,16.6 8.7,8.5 8.7,8.5 "></polygon>
+      </svg>
+      
+            </h2>
+        </a>
+        <div class="gradebox-body">
+          <div class="gradebox-body-description">
+            Artificial Intelligence curriculum for Class 7 by CBSE 
+          </div>
+          <ul class="gradebox-body-links">
+            <li class="subject-link-item">
+              <div class="subject-skill-container">
+                <h3 class="subject-hdr">Maths</h3>
+                <a class="skill-lk" href="/maths/lkg">
+                  <span class="lk-txt">55 skills >></span>
+                </a>
+              </div>
+            </li>
+            <li class="subject-link-item">
+              <div class="subject-skill-container">
+                <h3 class="subject-hdr">Maths</h3>
+                <a class="skill-lk" href="/maths/lkg" data-ga-click-event-name="grade list"
+                  data-ga-click-event-detail="/math/lkg"><span class="lk-txt">55 skills >></span></a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+  </li>
+
+  
+    <li class="classlistitem">
+      <div class="gradebox border-success">
+        <a href="" class="gradebox-link">
+            <div class="grade-box-tab bg-success">
+              VI
+            </div>
+            <h2 class="grade-box-hdr ">
+              <span class="grade-box-name text-success">Class 6</span>
+              
+                
+              
+      <svg class="grades-list-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_-ge-PK" x="0px" y="0px" viewBox="0 0 9 17" style="enable-background:new 0 0 9 17;" xml:space="preserve">
+      <polygon class="blue1-fill-svg" points="8.7,8.5 8.7,8.5 8.7,8.5 2.3,0.4 0,2.4 4.8,8.5 0,14.6 2.3,16.6 8.7,8.5 8.7,8.5 "></polygon>
+      </svg>
+      
+            </h2>
+        </a>
+        <div class="gradebox-body">
+          <div class="gradebox-body-description">
+            Artificial Intelligence curriculum for Class 8 by CBSE 
+          </div>
+          <ul class="gradebox-body-links">
+            <li class="subject-link-item">
+              <div class="subject-skill-container">
+                <h3 class="subject-hdr">Maths</h3>
+                <a class="skill-lk" href="/maths/lkg">
+                  <span class="lk-txt">55 skills >></span>
+                </a>
+              </div>
+            </li>
+            <li class="subject-link-item">
+              <div class="subject-skill-container">
+                <h3 class="subject-hdr">Maths</h3>
+                <a class="skill-lk" href="/maths/lkg" data-ga-click-event-name="grade list"
+                  data-ga-click-event-detail="/math/lkg"><span class="lk-txt">55 skills >></span></a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+  </li>
+
+  
+    <li class="classlistitem">
+      <div class="gradebox">
+        <a href="" class="gradebox-link">
+            <div class="grade-box-tab blue1-bg">
+              XI
+            </div>
+            <h2 class="grade-box-hdr blue1-text">
+              <span class="grade-box-name text-secondary">Class 11</span>
+              
+                
+              
+      <svg class="grades-list-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_-ge-PK" x="0px" y="0px" viewBox="0 0 9 17" style="enable-background:new 0 0 9 17;" xml:space="preserve">
+      <polygon class="blue1-fill-svg" points="8.7,8.5 8.7,8.5 8.7,8.5 2.3,0.4 0,2.4 4.8,8.5 0,14.6 2.3,16.6 8.7,8.5 8.7,8.5 "></polygon>
+      </svg>
+      
+            </h2>
+        </a>
+        <div class="gradebox-body">
+          <div class="gradebox-body-description">
+            Artificial Intelligence curriculum for Class 11 by CBSE 
+          </div>
+          <ul class="gradebox-body-links">
+            <li class="subject-link-item">
+              <div class="subject-skill-container">
+                <h3 class="subject-hdr">Maths</h3>
+                <a class="skill-lk" href="/maths/lkg">
+                  <span class="lk-txt">55 skills >></span>
+                </a>
+              </div>
+            </li>
+            <li class="subject-link-item">
+              <div class="subject-skill-container">
+                <h3 class="subject-hdr">Maths</h3>
+                <a class="skill-lk" href="/maths/lkg" data-ga-click-event-name="grade list"
+                  data-ga-click-event-detail="/math/lkg"><span class="lk-txt">55 skills >></span></a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+  </li>
+
+  
+
+  </ul>
+</div> -->
+
+<!-- <h2 class="aiforkids_heading2">Artificial Intelligence <span class="hl-primary1">Class Wise Curriculum</span> </h2> -->
+
+<div title="Choose the Class from the below buttons" class="aiforkids_heading_home-wrapper container spacer-1 rounded "
+  id="curriculum">
+  <h2 data-toc-text="Class Wise Curriculum" id="Class Wise Curriculum" class="aiforkids_heading2">Artificial
+    Intelligence <span class="hl-primary1">Class Wise Curriculum</span> </h2>
+</div>
+
+<section class="py-5 container">
+  <div class="row">
+    <div class="col-md-3">
+      <!-- Tabs nav -->
+      <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist"
+        aria-orientation="vertical">
+        <a class="nav-link mb-3 p-3 shadow text-center" id="v-pills-el-tab" data-toggle="pill" href="#v-pills-el"
+          role="tab" aria-controls="v-pills-el" aria-selected="true">
+          <!-- <i class="fa fa-user-circle-o mr-2"></i> -->
+          <span class="font-weight-bold small text-uppercase">AI for Class 11</span>
+        </a>
+        <a class="nav-link mb-3 p-3 shadow active text-center" id="v-pills-home-tab" data-toggle="pill"
+          href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+          <!-- <i class="fa fa-user-circle-o mr-2"></i> -->
+          <span class="font-weight-bold small text-uppercase">AI for Class 10</span>
+        </a>
+
+        <a class="nav-link mb-3 p-3 shadow text-center" id="v-pills-profile-tab" data-toggle="pill"
+          href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+          <!-- <i class="fa fa-calendar-minus-o mr-2"></i> -->
+          <span class="font-weight-bold small text-uppercase">AI for CLass 9</span>
+        </a>
+
+        <a class="nav-link mb-3 p-3 shadow text-center" id="v-pills-messages-tab" data-toggle="pill"
+          href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+          <!-- <i class="fa fa-star mr-2"></i> -->
+          <span class="font-weight-bold small text-uppercase">AI for Class 8</span>
+        </a>
+
+        <a class="nav-link mb-3 p-3 shadow text-center" id="v-pills-settings-tab" data-toggle="pill"
+          href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+          <!-- <i class="fa fa-check mr-2"></i> -->
+          <span class="font-weight-bold small text-uppercase">AI for Class 7</span>
+        </a>
+        <a class="nav-link mb-3 p-3 shadow text-center" id="v-pills-class-6-tab" data-toggle="pill"
+          href="#v-pills-class-6" role="tab" aria-controls="v-pills-class-6" aria-selected="false">
+          <!-- <i class="fa fa-check mr-2"></i> -->
+          <span class="font-weight-bold small text-uppercase">AI for Class 6</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <!-- Tabs content -->
+      <div class="tab-content" id="v-pills-tabContent">
+
+        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-el" role="tabpanel"
+          aria-labelledby="v-pills-el-tab">
+          <h3 class="font-italic mb-4" data-toc-skip>
+            Artificial Intelligence for Class 11
+          </h3>
+          <p class="font-italic text-muted mb-2">
+            AI Syllabus for Class 10 - <a href="/class-11/syllabus/" class="link"> Open Class 11</a><br /> <br>
+
+            AI Book for CBSE Class 10 – <a href="/class-11/syllabus/" class="link"> Open 11 Book</a> <br> <br />
+
+            <!-- AI Exam Pattern for Class 10 - <a href="/class-11/syllabus/" class="link"> Open Exam Pattern</a><br />
+              <br-->
+
+            AI Worksheets for Class 10 - <a href="/class-11/syllabus/" class="link"> Open Worksheets</a><br /> <br>
+
+
+            AI Projects for Class 10 – <a href="/class-11/syllabus/" class="link">Open AI Projects</a> <br> <br>
+            AI questions for Class 10 - <a href="/qa/class-11/" class="link">Open QA for 11</a>
+
+          </p>
+        </div>
+
+        <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel"
+          aria-labelledby="v-pills-home-tab">
+          <h3 class="font-italic mb-4" data-toc-skip>
+            Artificial Intelligence for Class 10
+          </h3>
+          <p class="font-italic text-muted mb-2">
+            AI Syllabus for Class 10 - <a href="/class-10/syllabus/" class="link"> Open Class 10</a><br /> <br>
+
+            AI Book for CBSE Class 10 – <a href="/class-10/syllabus/" class="link"> Open 10 Book</a> <br> <br />
+
+            <!-- AI Exam Pattern for Class 10 - <a href="/class-10/syllabus/" class="link"> Open Exam Pattern</a><br />
+              <br-->
+
+            AI Worksheets for Class 10 - <a href="/class-10/syllabus/" class="link"> Open Worksheets</a><br /> <br>
+
+
+            AI Projects for Class 10 – <a href="/class-10/syllabus/" class="link">Open AI Projects</a> <br> <br>
+            AI questions for Class 10 - <a href="/qa/class-10/" class="link">Open QA for 10</a>
+
+          </p>
+        </div>
+
+        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel"
+          aria-labelledby="v-pills-profile-tab">
+          <h3 class="font-italic mb-4" data-toc-skip>
+            Artificial Intelligence for Class 9
+          </h3>
+          <p class="font-italic text-muted mb-2">
+            AI Syllabus & Notes Class 9 - <a href="/class-9/syllabus/" class="link"> Open Class 9</a><br /> <br>
+
+            AI Book for CBSE Class 9 – <a href="/class-9/syllabus/" class="link"> Open 9 Book</a> <br> <br />
+
+            <!-- AI Exam Pattern Class 9 - <a href="/class-9/syllabus/" class="link"> Open Exam Pattern</a><br /> <br-->
+
+            AI worksheets Class 9 - <a href="/class-9/syllabus/" class="link"> Open Worksheets</a><br /> <br>
+
+
+            AI projects for Class 9 – <a href="/class-9/syllabus/" class="link">Open AI Projects</a> <br> <br>
+            AI questions for Class 9 - <a href="/qa/class-9/" class="link">Open QA for 9</a>
+          </p>
+        </div>
+
+        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel"
+          aria-labelledby="v-pills-messages-tab">
+          <h3 class="font-italic mb-4" data-toc-skip>
+            Artificial Intelligence for Class 8
+          </h3>
+          <p class="font-italic text-muted mb-2">
+            AI Syllabus & Notes Class 8 - <a href="/class-8/syllabus/" class="link"> Open Class 8</a><br /> <br>
+
+            AI Book for CBSE Class 8 – <a href="/class-8/syllabus/" class="link"> Open 8 Book</a> <br> <br />
+
+            <!-- AI Exam Pattern Class 8 - <a href="/class-8/syllabus/" class="link"> Open Exam Pattern</a><br /> <br-->
+
+            AI Worksheets Class 8 - <a href="/class-8/syllabus/" class="link"> Open Worksheets</a><br /> <br>
+
+            AI Projects for Class 8 – <a href="/class-8/syllabus/" class="link">Open AI Projects</a> <br> <br>
+            AI questions for Class 8 - <a href="/qa/class-7/" class="link">Open QA for 8</a>
+          </p>
+        </div>
+
+        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings" role="tabpanel"
+          aria-labelledby="v-pills-settings-tab">
+          <h3 class="font-italic mb-4" data-toc-skip>
+            Artificial Intelligence for Class 7
+          </h3>
+          <p class="font-italic text-muted mb-2">
+            AI Syllabus & Notes Class 7 - <a href="/class-7/syllabus/" class="link"> Open Class 7</a><br /> <br>
+
+            AI Book for CBSE Class 7 – <a href="/class-7/syllabus/" class="link"> Open 7 Book</a> <br> <br />
+
+            <!-- AI Exam Pattern Class 7 - <a href="/class-7/syllabus/" class="link"> Open Exam Pattern</a><br /> <br-->
+
+            AI Worksheets Class 7 - <a href="/class-7/syllabus/" class="link"> Open Worksheets</a><br /> <br>
+
+
+            AI Projects for Class 7 – <a href="/class-7/syllabus/" class="link">Open AI Projects</a> <br> <br>
+            AI questions for Class 7 - <a href="/qa/class-7/" class="link">Open QA for 7</a>
+          </p>
+        </div>
+        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-class-6" role="tabpanel"
+          aria-labelledby="v-pills-class-6-tab">
+          <h3 class="font-italic mb-4" data-toc-skip>
+            Artificial Intelligence for Class 6
+          </h3>
+          <p class="font-italic text-muted mb-2">
+            AI Syllabus & Notes Class 6 - <a class="link" href="/class-6/syllabus/"> Open Class 6</a><br />
+            <br>
+
+            AI Book for CBSE Class 6 – <a class="link" href="/class-6/syllabus/"> Open 6 Book</a> <br> <br />
+
+            <!-- AI Exam Pattern Class 6 - <a class="link" href="/class-6/syllabus/"> Open Exam Pattern</a><br />
+              <br-->
+
+            AI Worksheets Class 6 - <a class="link" href="/class-6/syllabus/"> Open Worksheets</a><br /> <br>
+
+
+            AI Projects for Class 6 – <a class="link" href="/class-6/syllabus/">Open AI Projects</a> <br> <br>
+            AI questions for Class 6 - <a class="link" href="/qa/class-6/" class="link">Open QA for 6</a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

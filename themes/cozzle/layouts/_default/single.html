@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section id="main">
+  <h1 id="title">{{ .Title }}</h1>
+  <div>
+        <article id="content">
+           {{ .Content }}
+        </article>
+  </div>
+</section>
+<aside id="meta">
+    <div>
+    <section>
+    </section>
+    <ul id="topics">
+        <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+      {{ end }}
+    </ul>
+    <!-- {{ end }} -->
+    {{ with .Params.tags }}
+    <ul id="tags">
+        <li> <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    </div>
+    <div>
+        {{ with .PrevInSection }}
+    </div>
+</aside>
+{{ end }}

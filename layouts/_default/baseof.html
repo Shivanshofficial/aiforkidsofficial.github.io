@@ -1,0 +1,80 @@
+
+        
+    {{ partial "headerstart" . }}
+{{ partial "meta" . }}
+
+    {{ block "headlinks" . }}
+    
+    {{end}}
+    
+    <!-- All the meta tags below will come under this meta partial -->
+  
+
+    {{ partial "headerend" . }}
+
+  <body>
+    <!-- Sidebar -->
+    {{ block "sidebar" . }}
+
+    {{end}}
+    <!-- end -->
+
+    {{ block "main" . }}
+
+    {{ end }}
+    <!-- #site Content -->
+
+    <!-- Toc -->
+    {{ block "toc" . }}
+
+    {{ end }}
+    
+    <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"> </i>top</a> -->
+        
+    <!-- Footer start -->
+    <footer class="new_footer_area bg_color main-footer">
+      <div class="new_footer_top">
+  
+          <div class="footer_bg">
+              <div class="footer_bg_one"></div>
+              <div class="footer_bg_two"></div>
+          </div>
+      </div>
+      <div class="footer_bottom">
+  <a href="https://www.google.com" target="_blank" aria-label="Google" class="footer_logo">
+  <svg role="img" aria-hidden="true" viewBox="0 0 396 130">    
+  
+  </svg>
+  </a>
+  
+  <div class="footer_links">
+  <a href="https://aiforkids.in/privacy-policy/" target="_blank" class="footer_link">Privacy Policy</a>
+  <a href="https://aiforkids.in/terms-conditions/" target="_blank" class="footer_link">Terms and Conditions</a>
+  <a href="https://aiforkids.in/sitemap.xml" target="_blank" class="footer_link">SiteMap</a>
+  <a href="https://aiforkids.in/about-us" target="_blank" class="footer_link">About</a>
+  <a href="https://aiforkids.in/contact-us" target="_blank" class="footer_link">Contact Us</a>
+  </div>
+  
+  <div class="footer_tertiary">
+  
+  <a href="/contact-us" class="footer_link footer_link--support" >
+  Feedback
+  </a>
+  </div>
+  
+  </div>
+  </div>
+  </footer>
+  </div>
+  <!-- #footer-->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+  <script src="/js/utils/jquery.slim.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    {{ block "footerlinks" . }}
+    {{end}}
+
+   <!-- #footer -->
+  </body>
+</html>

@@ -1,0 +1,37 @@
+---
+title: "Search Results"
+date: 2021-06-24T17:31:05+05:30
+draft: false
+sitemap:
+  priority : 0.1
+layout: "search"
+keywords: "Artificial Intelligence"
+description: 
+---
+
+<div class="border border-dark container rounded p-5 bg-dark ">
+  <h2 class="aiforkids_heading1 text-center text-primary">Search in Aiforkids</h2>
+<div class="container ">
+  <meta itemprop="url" content="https://aiforkids.in/"/>
+  <form  action="/search" class="input-group">
+    <input  id="search-query" type="text" class="form-control" name="s" required/>
+    <div class="input-group-append d-inline">
+      <button class="btn btn-secondary d-inline" type="button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </form>
+</div>
+</div>
+<!-- <form action="{{ "search" | absURL }}">
+<input id="search-query" name="s"/>
+</form> -->
+<br>
+<div id="no-search-text"></div>
+<br>
+<div class="lineBr"></div>
+<br>
+
+<div id="search-results">
+<h3 class="aiforkids_heading3">Mached Results</h3>
+</div>

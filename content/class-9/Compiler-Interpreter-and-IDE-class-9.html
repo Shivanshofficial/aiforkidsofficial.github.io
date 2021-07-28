@@ -1,0 +1,50 @@
+---
+underdev: "yes"
+title: "Compiler Interpreter and IDE Class 9"
+date: 2021-05-09T19:36:49+05:30
+draft: false
+keywords: "Artificial Intelligence"
+description: 
+class: 9
+imageurl: /images/header.png
+breadtitle: Compiler , Interpreter and IDE
+pagination: {
+    prev_link: /class-9/setting-up-python,
+    prev_text: Setting up Python,
+    next_link: /class-9/using-ide-learning-basic-python-programming-class-9/ ,
+    next_text: "Using IDE"
+}
+---
+
+
+<p>In the earlier days programming was not as easy as it is now, at that time the codes were written in <a href="/binary" class="link">Binary</a> format. <br> <br> For example: The word <strong>“hello”</strong> in binary code is: <strong>01101000 01100101 01101100 01101100 01101111</strong> – you can verify that with the binary translator and the same code with python will be <strong>print("hello")</strong>.</p> 
+<h2 class="aiforkids_heading1">History of Programming</h2>
+<h2 class="aiforkids_heading1">
+    Compiler
+</h2>
+<h3 class="aiforkids_heading3" data-toc-text="What is Compiler">What is meant by <span class="hl-primary1">Compiler</span> ?</h3>
+<p>As we saw in the history of Programming that how a binary code to output hello was <strong>01101000 01100101 01101100 01101100 01101111</strong> is tried to make easy by just using <strong>print("hello")</strong>. <br> <br> To make this possible something should be going on between the the python code and computer to make it understand this High Level language. 
+Here the compiler comes, In short, a compiler converts a program from a human-readable (Example: Python Code) format into a machine-readable format (Example: Binary Code). <br> <br>
+The <strong>High Level Code</strong> is called the <a href="/class-10/ai-terminology#source-code" class="link">Source Code</a> and the basic <strong>machine code</strong> translated by the compiler is called <a href="/class-10/ai-terminology#object-code" class="link">Object Code</a>, which the processor can "digest".</p>
+<p class="note">A <strong>Compiler</strong> is a <a href="/class-10/ai-terminology#program" class="link">Computer program</a> (Set of Instructions) that is responsible for changing programmed code (Source Code) into a more basic machine language code (Object Code) which is easy to read and understand by the computer itself.</p>
+
+<h3 class="aiforkids_heading3"  data-toc-text="How Compiler Works">How does the Compiler Work ?</h3>
+<p>As to how a compiler works, that is indeed complicated. There are books and university courses on the subject. I will attempt to briefly outline the main stages of the process, but this will be a very cursory overview.</p>
+
+<p>
+    <strong>Lexing</strong> - break up the text of the program into "tokens". The tokens are the "words" of the programming language, such as identifiers (keywords, variable names, function names, etc.) or operators (=, *, &, etc.). <br> <br>
+    <strong>Parsing</strong> - convert the sequence of tokens into a parse tree, which is a data structure representing various language constructs: type declarations, variable declarations, function definitions, loops, conditionals, expressions, etc. <br> <br>
+    <strong>Optimization</strong> - evaluate constant expressions, optimize away unused variables or unreachable code, unroll loops if possible, etc.
+</p>
+<p class="tip"> <strong>Compilers</strong> go through the <strong>whole code at once</strong> and then compile the whole source code code unlike <a href="#interpreter" class="link">Interpreter</a> which goes line by line.</p>
+<p>
+    Translate the parse tree into machine instructions (or JVM byte code).
+    Again, I stress that this is a very brief description. Modern compilers are very smart, and, consequently, very complicated.
+</p>
+<h2 class="aiforkids_heading1">
+    Interpreter
+</h2>
+
+<h2 class="aiforkids_heading1" data-toc-text="IDE">
+    IDE (Integrated Development Enviroment)
+</h2>

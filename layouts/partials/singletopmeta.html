@@ -1,0 +1,117 @@
+<div class="aiforkids-postmeta-wrapper">
+    <div class="postmeta-top">
+
+        <div class="aiforkids-breadcrumb-list">
+
+            <div class="aiforkids-breadcrumb-item"><a class="aiforkids-breadcrumb-link home-br-link" href="/">
+                    <span class="material-icons material-icons-outlined"
+                        style="font-size: 20px;vertical-align: baseline;padding-top: 2px;">
+                        home
+                    </span>
+                </a></div>
+            <div class="aiforkids-breadcrumb-item"><span class="material-icons aiforkids-breadcrumb-seperator"></span>
+
+                <a class="aiforkids-breadcrumb-link" href="/class-{{.Params.class}}">Class {{.Params.class}}</a>
+            </div>
+
+
+            <!-- The Main title of the page -->
+            {{ if isset .Params "breadtitle" }}
+            <!-- If you want a diffenrent title for the page in breadcrumb-->
+            <div class="aiforkids-breadcrumb-item"><span class="material-icons aiforkids-breadcrumb-seperator"></span>
+                <a class="aiforkids-breadcrumb-link" href="{{.Permalink}}">{{.Params.breadtitle}}</a>
+            </div>
+
+            {{else}}
+            <!-- If you didnt specify any other title for the page deafult one will be taken-->
+            <div class="aiforkids-breadcrumb-item"><span class="material-icons aiforkids-breadcrumb-seperator"></span>
+                <a class="aiforkids-breadcrumb-link" href="{{.Permalink}}">{{truncate 20 .Title}}</a>
+            </div>
+            {{ end }}
+            <!-- End of #title -->
+
+        </div>
+        <div id="linktort">
+            <a target="_blank" rel="nofollow"
+                href="https://www.facebook.com/sharer/sharer.php?u={{.Permalink}}&amp;t={{.Title}}"
+                title="Share on Facebook" id="linkfb">Facebook </a> 
+            <a target="_blank" rel="nofollow"
+                href="https://twitter.com/intent/tweet?source={{.Permalink}}&amp;text={{.Title}}:%20{{.Permalink}}"
+                title="Tweet it" id="linktw">Twitter </a> 
+            <a target="_blank" rel="nofollow"
+                href="http://pinterest.com/pin/create/button/?url={{.Permalink}}&amp;description={{.Title}}"
+                title="Pin it" id="linkpi">Pinterest </a>
+            <a target="_blank" rel="nofollow"
+                href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{.Permalink}}&amp;summary={{.Title}}&amp;source={{.Permalink}}"
+                title="LinkedIn" id="linkli">LinkedIn </a>
+        </div> 
+        &ensp;
+        &ensp;
+        <div class="postmeta-class btn-sm">Class {{.Params.class}}</div>
+
+    </div>
+    <div id="costumModal1" class="modal" data-easein="fadeIn" tabindex="-1" role="dialog"
+        aria-labelledby="costumModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered my-5 pt-5">
+            <br><br>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title no-anchor" data-toc-skip id="costumModalLabel">
+                        Yes, We Welcome Links
+                    </h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>If you think we are a worthwhile site, please link to us. <br> <br>
+                        We are a free resource and links are an easy way to help more people find us.</p>
+                    <p>You Can Use this logo</p>
+                    <div class="container text-center"><a href="{{.Site.Params.logoUrl}}"><img
+                                src="{{.Site.Params.logoUrl}}" class="w-25 img-thumbnail img" alt="Aiforkids Logo"> </a>
+                    </div>
+
+                    <p>Link to <em>"{{.Title}}"</em> page as: </p>
+
+                    <p><strong>URL: </strong> &ensp; <code> {{ .Permalink}}</code> </p>
+                    <p><strong>HTML Link: </strong> </p> <textarea name="" id="" cols="30"
+                        rows="2">&lt;a href="{{.Permalink}}">{{.Title}} - Aiforkids&lt;/a></textarea>
+                    <br> <br>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ if isset .Params "shorttitle" }}
+    <!-- IF short title is set then ignore the real page title-->
+
+    <h1 class="aiforkids-postmeta-title no-anchor d-inline-block" data-toc-skip>
+        {{.Params.shorttitle}}</h1>
+
+
+    {{else}}
+    <!-- Else use the default title-->
+    <h1 class="aiforkids-postmeta-title no-anchor" data-toc-skip>{{.Title}}</h1>
+
+    {{end}}
+
+    <a href="#costumModal1" role="button" data-target="#costumModal1" data-toggle="modal"
+        class="material-icons-outlined material-icons " title="Link To Us" style="font-size:2rem;cursor:pointer">
+        add_link
+    </a>
+    <!-- Feature image -->
+    {{ if isset .Params "nofeatureimage" }}
+
+    {{else}}
+    <div class="aiforkids-postmeta-featureimage">
+        <img src="{{.Params.imageurl}}" alt="Artificial Intelligence Class {{.Params.Class}}">
+
+    </div>
+    {{end}}
+
+</div>

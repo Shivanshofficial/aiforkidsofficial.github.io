@@ -1,0 +1,474 @@
+body {
+    background-color: #e8eaed;
+
+}
+html, body {height:100%;overflow:auto}
+
+/* 
+* =========================================================
+* 						CARD CONTENT CSS
+* =========================================================
+*/
+.classpagecontent .card {
+  border: none !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 0 40px #e6eff8 !important;
+  margin: 0.75rem !important;
+  padding: 0 !important;
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.classpagecontent .card .card-header {
+  background-color: var(--color-secondary);
+  color: #fff !important;
+  border-bottom: 0;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0,0,0,.03);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.classpagecontent .card .card-body {
+  padding: 0;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.classpagecontent .card .card-body tr td {
+  padding: 0.75rem 2rem;
+  border-color: rgba(76, 101, 213, 0.24);
+}
+
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.classpagecontent .card .card-body tr td a {
+  color: #000;
+  text-decoration: none !important;
+  display: block;
+}
+
+
+.results tr[visible='false'],
+.no-result{
+  display:none;
+}
+
+.results tr[visible='true']{
+  display:table-row;
+}
+
+.counter{
+  padding:8px; 
+  color:#ccc;
+}
+/* #card content css */
+.siteWrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "sidebar"
+      "ad"
+      "footer";
+  }
+.main-head {
+    grid-area: header;
+  }
+#single {
+    margin-top: 4em;
+grid-area: content;
+background-color: #fff;
+border-radius: 2px;
+box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
+padding: 40px;
+}
+.aiforkids-sidebar {
+grid-area: nav;
+background-color: #fff;
+position: fixed;
+width:16vw;
+display: inline-block;
+box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
+height: 100%;
+top: 64px;
+}
+.side {
+grid-area: sidebar;
+}
+.ad {
+grid-area: ad;
+}
+.main-footer {
+grid-area: footer;
+}
+
+  /* @media (min-width: 900px) { */
+    #single{
+      margin-top:4em;
+    }
+    .siteWrapper {
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas:
+        "header header  header"
+        "nav    content sidebar"
+        "nav    content sidebar"
+        "footer footer  footer"
+     } 
+     nav ul {
+       flex-direction: column;
+     }
+  /* } */
+
+
+  /* SCROLL SPY */
+  nav[data-toggle="toc"] {
+    top: 80px;
+  }
+  
+
+  .sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+ 
+  nav[data-toggle="toc"]  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+
+  }
+  nav[data-toggle="toc"]  .nav-link{
+  
+    font-size: .8rem !important;
+    background-color: transparent;
+    color: #262626;
+    line-height: 1.1rem;
+    padding: 0 5px !important;
+    font-weight: 400;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-transform: none;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } 
+  nav[data-toggle="toc"]  .active,.tocNav .active {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #1266f1 !important;
+    font-weight: 600 !important;
+    /* border-left: .125rem solid #1266f1; */
+    border-radius: 0;
+}
+
+nav[data-toggle="toc"]  ul.nav{
+
+  border-left: 4px solid var(--color-secondary) ;
+padding-left: 5px;
+margin-left: 1vw;
+
+}
+
+nav[data-toggle="toc"]  .nav-link-head{
+
+  font-size: .8rem !important;
+  background-color: transparent;
+  color: var(--color-accent);
+  line-height: 1.1rem;
+  padding: 0 5px !important;
+  font-weight: 700;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  text-transform: none;
+  margin-top: 3px;
+  margin-bottom: 0px;
+} 
+/* h1:before { 
+  display: block; 
+  content: " ";
+  margin-top: -85px !important; 
+  height: 85px !important; 
+  visibility: hidden; 
+} */
+
+
+:target::before {
+  content: "";
+  display: block;
+  margin-top: -80px;
+  height: 80px;
+  width: 1px;
+}
+
+/* 
+* =========================================================
+*         SIDEBAR NAV STYLES BY LALIT KUMAR
+* =========================================================
+*/
+.aiforkids-sidebar::-webkit-scrollbar-thumb, [slimscrollbar]::-webkit-scrollbar-thumb, pre::-webkit-scrollbar-thumb {
+  background: rgba(128,134,139,.26);
+  border-radius: 8px;
+}
+[slimscrollbars]::-webkit-scrollbar-corner, pre::-webkit-scrollbar-corner {
+  background: 0;
+}
+.aiforkids-sidebar::-webkit-scrollbar, [slimscrollbar]::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.aiforkids-sidebar
+{
+
+  font-size: 13px;
+  overflow-y: auto;
+}
+
+.aiforkids-sidenav-navlist 
+
+{
+
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 36px;
+ font: 400 Roboto,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+ text-size-adjust: 100%;
+ -webkit-font-smoothing:antialiased;
+}
+
+.aiforkids-sidenav-item:hover
+{
+  background:#f1f3f4;
+}
+.aiforkids-sidenav-item
+{
+  line-height: 16px;
+  margin: 0;
+  border-radius: 0 12px 12px 0;
+  
+}
+:link, :visited {
+  /* color: #1a73e8; */
+  outline: 0;
+  -webkit-text-decoration:none;
+  -moz-text-decoration: none;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.aiforkids-sidenav-link
+{
+  color: #202124;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Roboto , sans-serif;
+
+  padding-left: 24px;
+  margin-right: 0;
+  padding-right: 8px;
+  -webkit-font-smoothing:antialiased;
+
+}
+
+.aiforkids-sidenav-link:hover
+{
+  color: #202124 ;
+  text-decoration: none;
+ 
+}
+  
+.aiforkids-sidenav-text
+{
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+.aiforkids-sidenav-heading>.aiforkids-sidenav-link
+{
+  color: #252525a6;
+  font-weight:bold;
+  /* font-size: 13.2px; */
+  padding-bottom: 4px;
+  font-family: Roboto ,sans-serif;
+
+}
+.aiforkids-sidenav-heading:hover
+{
+background-color: white !important;
+cursor: default;
+}
+.aiforkids-sidenav-heading *:hover
+{
+background-color: white !important;
+cursor:default;
+}
+.aiforkids-sidenav-heading:first-of-type
+{
+border:none;
+}
+.aiforkids-sidenav-heading
+{
+ border-top: 1px solid #dadce0;
+ padding-top: 11px;
+ border-radius: 0;
+ /* letter-spacing: -.2px; */
+ margin-top: 12px;
+}
+
+p{
+  color: #202124 !important;
+  margin: 16px 0;
+  font: 400 16px/24px Roboto,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif !important;
+}
+
+/*
+*************************************
+* HERES MORE LINKS CSS BY LALIT 
+*************************************
+<!-- This is the template of related links -->
+
+<div class="hereMore-wrapper text-center">
+    <thead><h4>Related Links</h4></thead>
+    <table>
+        <tr>
+            <td><a href="/hhh">something here</a></td>
+            <td><a href="">something here</a></td>
+        </tr>
+        <tr>
+            <td><a href="">other thing here</a></td>
+            <td><a href="">other thing here</a></td>
+        </tr>
+    </table>
+</div>
+
+*************************************
+*/
+.hereMore-wrapper td{
+  padding: 8px ;
+
+  padding-left: 1em;
+  text-align: left;
+  border: 1.5px solid lightgray;
+}
+.hereMore-wrapper h4 {
+  border: 2px solid lightgray;
+  border-bottom: 0;
+  padding: 10px;
+  margin: 0;
+}
+
+/* ========================================================= */
+/* RESPONSIVENESS */
+/* ========================================================= */
+
+  @media screen and (max-width: 767px) {
+
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle="toc"] {
+    margin-bottom: 42px;
+    position: static;
+  }
+
+  /* PICK ONE */
+  /* don't expand nested items, which pushes down the rest of the page when navigating */
+  nav[data-toggle="toc"] .nav .active .nav {
+    display: none;
+  }
+  /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
+  /*
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }
+  */
+  #single{
+    margin-top:2em;
+  }
+  .siteWrapper {
+    grid-template-columns: 25% 70%;
+    grid-template-areas:
+      "header header"
+      "nav content"
+      "nav content"
+      "footer footer"
+   } 
+   .aiforkids-sidebar
+   {
+     width: 25%;
+     top: 56px;
+   }
+
+   nav[data-toggle="toc"]
+   {
+     display: none;
+   }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .siteWrapper {
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "header"
+        "content"
+        "content"
+        "footer"
+     }  
+     .aiforkids-sidebar
+     {
+       display: none;
+     }
+     nav[data-toggle="toc"]
+     {
+       display: none;
+     }
+
+  }
+
+  
