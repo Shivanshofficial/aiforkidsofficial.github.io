@@ -1,0 +1,426 @@
+body {
+    background-color: #e8eaed;
+
+}
+body.dark-theme {
+    background-color: rgb(52, 53, 53);
+
+}
+/**
+* Responsiveness of all the SINGLE Pages *
+* 
+ */
+ 
+.siteWrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "sidebar"
+      "ad"
+      "footer";
+  }
+.main-head {
+    grid-area: header;
+  }
+#single {
+    margin-top: 4em;
+grid-area: content;
+background-color:  var(--bg-primary);
+border-radius: 2px;
+box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
+padding: 40px;
+}
+.aiforkids-sidebar {
+grid-area: nav;
+background-color:  var(--bg-primary);
+position: fixed;
+width:16vw;
+display: inline-block;
+box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
+height: 100%;
+top: 64px;
+}
+.side {
+grid-area: sidebar;
+}
+.ad {
+grid-area: ad;
+}
+.main-footer {
+grid-area: footer;
+}
+
+#single{
+  margin-top:4em;
+}
+.siteWrapper {
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas:
+    "header header  header"
+    "nav    content sidebar"
+    "nav    content sidebar"
+    "footer footer  footer"
+ } 
+ nav ul {
+   flex-direction: column;
+  }
+
+  /* SCROLL SPY */
+  nav[data-toggle="toc"] {
+    top: 80px;
+  }
+  .sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+ 
+  nav[data-toggle="toc"]  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+
+  }
+  nav[data-toggle="toc"]  .nav-link{
+  
+    font-size: .8rem !important;
+    background-color: transparent;
+    color:  var(--color-accent); /* #262626*/
+    line-height: 1.1rem;
+    padding: 0 5px !important;
+    font-weight: 400;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-transform: none;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } 
+  nav[data-toggle="toc"]  .active,.tocNav .active {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #1266f1 !important;
+    font-weight: 600 !important;
+    /* border-left: .125rem solid #1266f1; */
+    border-radius: 0;
+}
+
+nav[data-toggle="toc"]  ul.nav{
+
+  border-left: 4px solid var(--color-secondary) ;
+  padding-left: 5px;
+  margin-left: 1vw;
+
+}
+
+nav[data-toggle="toc"]  .nav-link-head{
+
+  font-size: .8rem !important;
+  background-color: transparent;
+  color: var(--color-accent);
+  line-height: 1.1rem;
+  padding: 0 5px !important;
+  font-weight: 700;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  text-transform: none;
+  margin-top: 3px;
+  margin-bottom: 0px;
+} 
+/* h1:before { 
+  display: block; 
+  content: " ";
+  margin-top: -85px !important; 
+  height: 85px !important; 
+  visibility: hidden; 
+} */
+
+
+:target::before {
+  content: "";
+  display: block;
+  margin-top: -80px;
+  height: 80px;
+  width: 1px;
+}
+
+/* 
+* =========================================================
+*         SIDEBAR NAV STYLES BY LALIT KUMAR
+* =========================================================
+*/
+.dark-theme .aiforkids-sidebar::-webkit-scrollbar-thumb, [slimscrollbar]::-webkit-scrollbar-thumb, pre::-webkit-scrollbar-thumb {
+  background: rgba(231, 234, 236, 0.26) !important;
+}
+.aiforkids-sidebar::-webkit-scrollbar-thumb, [slimscrollbar]::-webkit-scrollbar-thumb, pre::-webkit-scrollbar-thumb {
+  background: rgba(128,134,139,.26);
+  border-radius: 8px;
+}
+[slimscrollbars]::-webkit-scrollbar-corner, pre::-webkit-scrollbar-corner {
+  background: 0;
+}
+.aiforkids-sidebar::-webkit-scrollbar, [slimscrollbar]::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.aiforkids-sidebar
+{
+
+  font-size: 13px;
+  overflow-y: auto;
+}
+
+.aiforkids-sidenav-navlist 
+
+{
+
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 36px;
+ font: 400 Roboto,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+ text-size-adjust: 100%;
+ -webkit-font-smoothing:antialiased;
+}
+
+.aiforkids-sidenav-item:hover
+{
+  background: #f1f3f4;/*#f1f3f4*/
+}
+.dark-theme .aiforkids-sidenav-item:hover
+{
+  background: #8f8f8f;/*#f1f3f4*/
+}
+.aiforkids-sidenav-item
+{
+  line-height: 16px;
+  margin: 0;
+  border-radius: 0 12px 12px 0;
+  
+}
+:link, :visited {
+  /* color: #1a73e8; */
+  outline: 0;
+  -webkit-text-decoration:none;
+  -moz-text-decoration: none;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.aiforkids-sidenav-link
+{
+  color: var(--color-accent);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Roboto , sans-serif;
+
+  padding-left: 24px;
+  margin-right: 0;
+  padding-right: 8px;
+  -webkit-font-smoothing:antialiased;
+
+}
+
+.aiforkids-sidenav-link:hover
+{
+  color: #202124 ;
+  text-decoration: none;
+ 
+}
+  
+.aiforkids-sidenav-text
+{
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+.dark-theme .aiforkids-sidenav-heading>.aiforkids-sidenav-link
+{
+  color: #ffffffce;
+
+}
+.aiforkids-sidenav-heading>.aiforkids-sidenav-link
+{
+  color: #252525a6;
+  font-weight:bold;
+  /* font-size: 13.2px; */
+  padding-bottom: 4px;
+  font-family: Roboto ,sans-serif;
+
+}
+.aiforkids-sidenav-heading:hover
+{
+background-color:  var(--bg-primary) !important;
+cursor: default;
+}
+.aiforkids-sidenav-heading *:hover
+{
+background-color: var(--bg-primary) !important;
+cursor:default;
+}
+.aiforkids-sidenav-heading:first-of-type
+{
+border:none;
+}
+.aiforkids-sidenav-heading
+{
+ border-top: 1px solid var(--bg-secondary);
+ padding-top: 11px;
+ border-radius: 0;
+ /* letter-spacing: -.2px; */
+ margin-top: 12px;
+}
+
+
+.dark-theme p {
+  color: #ccccd3 !important;
+  
+}
+/*
+*************************************
+* HERES MORE LINKS CSS BY LALIT 
+*************************************
+<!-- This is the template of related links -->
+
+<div class="hereMore-wrapper text-center">
+    <thead><h4>Related Links</h4></thead>
+    <table>
+        <tr>
+            <td><a href="/hhh">something here</a></td>
+            <td><a href="">something here</a></td>
+        </tr>
+        <tr>
+            <td><a href="">other thing here</a></td>
+            <td><a href="">other thing here</a></td>
+        </tr>
+    </table>
+</div>
+
+*************************************
+*/
+.hereMore-wrapper td{
+
+  text-align: center;
+  font-family: var(--ff-heading);
+  border: 2px solid var(--color-primary2);
+  padding: 5px;
+}
+.hereMore-wrapper td a{
+  font-weight: bold;
+  margin-top: auto;
+  vertical-align: middle;
+  font-size:17px;
+  color: var(--color-primary1);
+  
+}
+.hereMore-wrapper h4 {  
+  border: 3px solid var(--color-primary2);
+  border-bottom: 0;
+  padding: 10px;
+  margin: 0;
+  font-family:  var(--ff-heading) !important;
+  font-weight: bold;
+}
+.hereMore-wrapper td a:hover{
+  text-decoration: underline;
+  }
+  
+
+/* ========================================================= */
+/* RESPONSIVENESS */
+/* ========================================================= */
+
+@media screen and (max-width: 1100px){
+  .siteWrapper {
+    grid-template-columns: 25% 70%;
+    grid-template-areas:
+      "header header"
+      "nav content"
+      "nav content"
+      "footer footer"
+   } 
+   .aiforkids-sidebar
+   {
+     width: 25%;
+     top: 56px;
+   }
+   nav[data-toggle="toc"]
+   {
+     display: none !important;
+   }
+   nav[data-toggle="toc"] .nav .active .nav {
+    display: none;
+  }
+  nav[data-toggle="toc"] {
+    margin-bottom: 42px;
+    position: static;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .aiforkids-sidebar
+  {
+    display: none;
+  }
+  .siteWrapper {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "content"
+      "content"
+      "footer"
+   }  
+
+
+}
+@media screen and (max-width: 767px) {
+ 
+  /* override stickyness so that the navigation does not follow scrolling */
+
+
+  /* PICK ONE */
+  /* don't expand nested items, which pushes down the rest of the page when navigating */
+
+  /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
+  /*
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }
+  */
+  #single{
+    margin-top:2em;
+  }
+
+
+
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (max-width: 600px) {
+ 
+     nav[data-toggle="toc"]
+     {
+       display: none;
+     }
+
+  }

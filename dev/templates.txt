@@ -1,9 +1,0 @@
-Heading :
-
-toggle:
-
-  <button class="btn btn-link border" type="button" data-toggle="collapse" data-target="#toggle1" aria-expanded="true" aria-controls="toggle1">
-    Toggle View
-  </button>
-
-  id="toggle1" class="collapse"
