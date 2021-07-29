@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://aiforkids.in/class-10/revised-syllabus/</loc>
+    <lastmod>2021-07-29T19:34:30+05:30</lastmod>
+  </url><url>
     <loc>https://aiforkids.in/qa/class-10/question1/</loc>
     <lastmod>2021-06-28T16:54:53+05:30</lastmod>
   </url><url>
@@ -297,7 +300,7 @@
     <loc>https://aiforkids.in/class-9/how-print-works-in-python-class-9/</loc>
     <lastmod>2021-05-09T19:37:36+05:30</lastmod>
   </url><url>
-    <loc>https://aiforkids.in/class-9/practical-python-basics-class-9/</loc>
+    <loc>https://aiforkids.in/class-9/practical-python-basics/</loc>
     <lastmod>2021-05-09T19:37:24+05:30</lastmod>
   </url><url>
     <loc>https://aiforkids.in/class-9/using-ide-learning-basic-python-programming-class-9/</loc>
@@ -312,14 +315,8 @@
     <loc>https://aiforkids.in/class-9/how-information-flows-artificial-neural-networks-class-9/</loc>
     <lastmod>2021-05-09T19:35:33+05:30</lastmod>
   </url><url>
-    <loc>https://aiforkids.in/class-9/what-applications-should-neural-networks-be-used-for-class-9/</loc>
-    <lastmod>2021-05-09T19:35:11+05:30</lastmod>
-  </url><url>
     <loc>https://aiforkids.in/class-9/artificial-neuron-network-with-two-hidden-layers-class-9/</loc>
     <lastmod>2021-05-09T19:35:01+05:30</lastmod>
-  </url><url>
-    <loc>https://aiforkids.in/class-9/struggles-in-creating-brain-like-neural-networks-for-ai-class-9/</loc>
-    <lastmod>2021-05-09T19:34:03+05:30</lastmod>
   </url><url>
     <loc>https://aiforkids.in/class-9/functioning-of-human-brain-class-9/</loc>
     <lastmod>2021-05-09T19:33:37+05:30</lastmod>
@@ -333,22 +330,22 @@
     <loc>https://aiforkids.in/class-9/introduction-neural-networks-ai-class-9/</loc>
     <lastmod>2021-05-09T19:32:06+05:30</lastmod>
   </url><url>
-    <loc>https://aiforkids.in/class-9/flow-chartai-project-cycle-class-9/</loc>
+    <loc>https://aiforkids.in/class-9/flow-chart-project-cycle/</loc>
     <lastmod>2021-05-09T19:30:36+05:30</lastmod>
   </url><url>
     <loc>https://aiforkids.in/class-9/domains-of-ai-quiz-1-class-9/</loc>
     <lastmod>2021-05-09T19:30:02+05:30</lastmod>
   </url><url>
-    <loc>https://aiforkids.in/class-9/artificial-intelligence-in-education-class-9/</loc>
+    <loc>https://aiforkids.in/class-9/ai-in-education/</loc>
     <lastmod>2021-05-09T19:26:32+05:30</lastmod>
   </url><url>
     <loc>https://aiforkids.in/class-9/intro-to-ai-quiz-2-class-9/</loc>
     <lastmod>2021-05-09T19:22:16+05:30</lastmod>
   </url><url>
-    <loc>https://aiforkids.in/class-9/history-of-artificial-intelligence-class-9/</loc>
+    <loc>https://aiforkids.in/class-9/history-ai/</loc>
     <lastmod>2021-05-09T19:22:08+05:30</lastmod>
   </url><url>
-    <loc>https://aiforkids.in/class-9/applications-of-artificial-intelligence-class-9/</loc>
+    <loc>https://aiforkids.in/class-9/applications-ai/</loc>
     <lastmod>2021-05-09T19:21:59+05:30</lastmod>
   </url><url>
     <loc>https://aiforkids.in/class-9/intro-to-ai-quiz-1-class-9/</loc>
@@ -360,7 +357,7 @@
     <loc>https://aiforkids.in/class-9/ethics-of-artificial-intelligence-class-9/</loc>
     <lastmod>2021-05-09T19:20:41+05:30</lastmod>
   </url><url>
-    <loc>https://aiforkids.in/class-9/what-is-artificial-intelligence-class-9/</loc>
+    <loc>https://aiforkids.in/class-9/what-is-ai/</loc>
     <lastmod>2021-05-09T19:20:01+05:30</lastmod>
   </url><url>
     <loc>https://aiforkids.in/class-10/</loc>

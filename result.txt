@@ -1,10 +1,10 @@
 hugo new class-10/What-Artificial-Intelligence-class-10.html
 hugo new class-10/Decision-Making-class-10.html
-hugo new class-10/What-artificial-Intelligence-and-What-Not-class-10.html
+hugo new class-10/what-is-ai.html
 hugo new class-10/Foundation-concepts-quiz-class-10.html
-hugo new class-10/Intro-AI-related-terminologies-class-10.html
-hugo new class-10/Introduction-AI-ML-DL-class-10.html
-hugo new class-10/Introdcution-Domains-of-AI-Data-CV-NLP-class-10.html
+hugo new class-10/terminologies.html
+hugo new class-10/Ai-ml-dl.html
+hugo new class-10/Introdcution-Domains-of-ai.html
 hugo new class-10/Applications-AI-Look-Real-life-AI-Implementations-class-10.html
 hugo new class-10/Ethics-Artificial-Intelligence-class-10.html
 hugo new class-10/project-cycle.html

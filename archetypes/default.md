@@ -5,6 +5,5 @@ date: {{ .Date }}
 draft: false
 keywords: "Artificial Intelligence"
 description: 
-hello: yes
 ---
 
